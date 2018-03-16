@@ -1,0 +1,4 @@
+1. MyBatis生成工具类是me.maxwell.ecsp.EcspProjectGenerator;
+2. 修改链接数据库的参数；
+3. 修改文件输出目录；
+4. 修改包名；
