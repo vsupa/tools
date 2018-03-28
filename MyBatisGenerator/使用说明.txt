@@ -1,4 +1,15 @@
-1. MyBatis生成工具类是me.maxwell.ecsp.EcspProjectGenerator;
-2. 修改链接数据库的参数；
-3. 修改文件输出目录；
-4. 修改包名；
+1.Model通用代码文件生成工具说明
+第一步：修改code-gen-default.properties;
+    数据库链接参数;
+    临时目录路径;
+    生成一个模块相关的4个参数:
+        module.XXX.outputDir:代码文件的输入目录，为了方便可以添加模块对应的工程的根目录；
+        module.XXX.packageName:模块的JAVA包名；
+        module.XXX.tableNamePrefix:表名的前缀，没有时可以时空值；
+        module.XXX.tables:当前模块包含的表名；
+
+第二步：以通用方式执行mybatis-gen-x.x.x-exec.jar（其中x.x.x表示版本号）；
+    模式1：生成code-gen配置文件已配置的全部模块的代码文件；
+        java -jar mybatis-gen-x.x.x-exec.jar code-gen-default.properties
+    模式2：生成指定模块（可多个）的代码文件；
+            java -jar mybatis-gen-x.x.x-exec.jar code-gen-default.properties user message
