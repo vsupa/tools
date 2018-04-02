@@ -80,6 +80,11 @@ public class ModuleCodeGenerator {
         tc.setController(null);
         tc.setService(null);
         tc.setServiceImpl(null);
+
+        tc.setEntity("/templates2/entity.java.vm");
+        tc.setMapper("/templates2/mapper.java.vm");
+        tc.setXml("/templates2/mapper.xml.vm");
+
         mpg.setTemplate(tc);
 
         // 执行生成

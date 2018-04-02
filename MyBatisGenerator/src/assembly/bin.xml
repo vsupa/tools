@@ -6,6 +6,8 @@
         <format>jar</format>
     </formats>
     <includeBaseDirectory>false</includeBaseDirectory>
+    
+    <!--
     <fileSets>
         <fileSet>
             <directory>${project.basedir}</directory>
@@ -15,6 +17,7 @@
             </includes>
         </fileSet>
     </fileSets>
+    -->
 
     <dependencySets>
         <dependencySet>
